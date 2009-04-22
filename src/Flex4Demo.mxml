@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns="http://ns.adobe.com/mxml/2009"  
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:components="components.*" >
+	
+	<Script>
+		<![CDATA[
+			import spark.layout.VerticalLayout;
+			import skins.MyRedButtonSkin;
+		]]>
+	</Script>
+	<Declarations>
+		
+	</Declarations>
+	<s:Group layout="{new VerticalLayout()}">
+		<components:MyButton label="custom red" skinClass="skins.MyRedButtonSkin"/>
+		<components:MyButton label="custom default" />
+		<s:Button label="spark" />
+		<s:Button label="spark red"  />
+	</s:Group>
+	
+</s:Application>
